@@ -1,3 +1,9 @@
+/* (10x100)/16 = 62.5% */
+/* 62.5% of 16px = 10px */
+html {
+  font-size: 62.5%;
+}
+
 :root {
   --color-primary: #2584f0;
   --color-secondary: #00d9f5;
@@ -10,8 +16,34 @@
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
 }
 
-h1,h2,h3{
-    color: var(--color-heading);
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  /* 1 x font-size of the html-element = 16px */
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body{font-size: 1.8rem;}
+  h1{font-size: 8rem;}
+  h2{font-size: 4rem;}
+  h3{font-size: 2.4rem;}
 }
