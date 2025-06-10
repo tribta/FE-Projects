@@ -1,6 +1,12 @@
 /* Typography */
 /* (10x100)/16 = 62.5% */
 /* 62.5% of 16px = 10px */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -128,31 +134,31 @@ a {
   display: inline-block;
   margin-right: 2rem;
 }
-.list--tick{
+.list--tick {
   list-style-image: url(../icons/tick.svg);
   padding-left: 3rem;
 }
-.list--tick .list__item{
+.list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 1024px) {
-  .list--tick .list__item{
+  .list--tick .list__item {
     padding-left: 0;
   }
 }
 
 /* Icons */
-.icon{
+.icon {
   width: 40px;
   height: 40px;
 }
 
-.icon--primary{
+.icon--primary {
   fill: var(--color-primary);
 }
 
-.icon-container{
+.icon-container {
   background: #e9f5ff;
   width: 64px;
   height: 64px;
@@ -160,4 +166,61 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #2584f0db;
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #00d9f5c4;
+}
+.btn-accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn-accent:hover {
+  background: #f34040c7;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: #fff;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
