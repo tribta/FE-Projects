@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "css-project",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../../devs/ui/css-project/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css-project"
+	}
+}
